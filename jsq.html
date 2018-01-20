@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsq</title>
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="js/bootstrap.css">
+</head>
+<style>
+    #app {
+        width: 600px;
+        height: 600px;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #app button {
+        margin-top: 5px;
+    }
+
+    input {
+        width: 190px;
+        text-align: right
+    }
+</style>
+
+<body>
+    <div id="app">
+        <input type="text" v-bind:input-show="inputShow"><br>
+        <button class="ui  button violet basic" v-on:click="typetoinput(' 1 ')">1</button>
+        <button class="ui  button violet basic">2</button>
+        <button class="ui  button violet basic">3</button>
+        <button class="ui  button violet basic">+</button> <br>
+        <button class="ui  button violet basic">4</button>
+        <button class="ui  button violet basic">5</button>
+        <button class="ui  button violet basic">6</button>
+        <button class="ui  button violet basic">-</button> <br>
+        <button class="ui  button violet basic">7</button>
+        <button class="ui  button violet basic">8</button>
+        <button class="ui  button violet basic">9</button>
+        <button class="ui  button violet basic">*</button> <br>
+        <button class="ui  button violet basic"> &nbsp;.&nbsp; </button>
+        <button class="ui  button violet basic">0</button>
+        <button class="ui  button violet basic">=</button>
+        <button class="ui  button violet basic">/</button><br>
+        <button class="ui  button violet basic" style="width: 190px">C</button>
+
+
+
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="jsq.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
